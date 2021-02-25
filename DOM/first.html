@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <script>
+        const tag =  document.createElement('h1') // creating the tag
+        console.log(tag)
+        let content = document.createTextNode('hello world') // content
+        console.log(content)
+
+        tag.appendChild(content) // appendChild adds the content inside the h1 tag
+        document.body.appendChild(tag) // adding the content inside the body
+    </script>
+</body>
+</html>

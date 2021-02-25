@@ -4,7 +4,7 @@ var map =[1,2,3,4,5,6].map(function(n){
     return n*2
 
 });
-
+/*
 console.log(map);
 
 //filter
@@ -19,3 +19,4 @@ var reduce =[1,2,3,4,5,6,].reduce(function(accumilator,current){
 });
 console.log(reduce)
 
+*/

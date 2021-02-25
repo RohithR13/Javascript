@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            listing file
+        </title>
+    </head>
+    <body>
+        <h2>Places to visit
+        <ul>
+            <li>lalbagh</li>
+            <li>caban park</li>
+            <li>mg road</li>
+        </ul>
+    </body>
+</html>
+
+links.length
+412
+Array.isArray(links)
+false
+names = ["sharath"]
+["sharath"]
+Array.isArray(names)
+true

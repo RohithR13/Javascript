@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Players List</title>
+    </head>
+    <body>
+        <script>
+            let players = ['virat', "rahane", "pujara","rahul", "jadeja", "pant"]
+
+            const headingTag = document.createElement('h2')
+            let content = document.createTextNode('list of players')
+                headingTag.appendChild(content)
+                const ulTag = document.createElement('ul')
+            players.forEach(function(item){
+                const liTag
+ const liTag = document.createElement('li')
+                const content1 = document.createTextNode(item)
+                liTag.appendChild(content1)
+                ulTag.appendChild(liTag)
+            })
+            document.body.appendChild(headingTag)
+            document.body.appendChild(ulTag)
+        </script>
+    </body>
+</html>

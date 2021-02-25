@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>text  data</h1>
+    <textarea id="text"></textarea>
+    <script>
+        let textHandler = document.getElementById("text")
+        textHandler.addEventListener("keyup",function(){
+            let data = textHandler.value
+            localStorage.setItem("text",data)
+        })
+        textHandler.innerHTML = localStorage.getItem("text")
+    </script>
+    
+</body>
+</html>

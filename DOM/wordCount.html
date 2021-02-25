@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <h1><b> The word count</b></h1>
+    <label for="textbox">Input</label>
+    <input type="message" id ="textbox" name="name">
+    <p>There are <span id="word"> </span>word and <span id="character"> </span>character</p>
+    <script>
+        let inputHandler = document.getElementById('textbox')
+        inputHandler.addEventListener('focus',function(){
+            console.log("inside input")
+        })
+        inputHandler.addEventListener('blur',function(){
+            console.log("outside input")
+        })
+        inputHandler.addEventListener('keyup',function(){
+            let strings = document.getElementById('textbox').value
+            let character = strings.length
+            let word = strings.split(" ").length
+            if(strings==''){
+                document.getElementById('word').innerHTML="0"
+                document.getElementById('character').innerHTML="0"
+            }
+            else  {
+            console.log(character)
+            console.log(word)
+            document.getElementById('word').innerHTML= word
+            document.getElementById('character').innerHTML = character}
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            let items = [{
+                id:1, name:"dosa", isVeg:true},
+                  { id:2, name:"chicken 65", isVeg:false},
+                {id:3, name: "idli", isVeg:true},
+                {id:4, name: "vada", isVeg:true},
+                {id:5, name: "egg fried rice", isVeg:false},
+                {id:6, name: "boiled egg", isVeg:false}
+            ]
+            const vegHead = document.createElement("h2") 
+            const nonvegHead =document.createElement("h2")
+            
+            vegHead.textContent =" veg items"
+            nonvegHead.textContent = "non veg items"
+            const NonulTag = document.createElement('ul')
+            const vegultag = document.createElement('ul')
+            items.forEach(function(item,index){
+                 
+                if(item.isVeg==true){
+                    console.log(item)
+                    let li =  document.createElement('li')
+                    li.textContent=item.name;
+                    vegultag.appendChild(li)
+                }
+                else{
+                    console.log(item)
+                    let li =  document.createElement('li')
+                   li.textContent =item.name;
+                    NonulTag.appendChild(li)
+                }
+                
+            });
+            function createNewCheckboxt(name, id){
+                var checkbox = document.createElement('input'); 
+                const label = document.createElement('label');
+                const div =document.createElement('div')
+                checkbox.type= 'checkbox';
+                checkbox.name = name;
+                checkbox.value ='checked';
+                console.log(checkbox.value)
+                checkbox.id = id;
+                label.htmlFor = id;
+                label.textContent = name;
+                div.appendChild(checkbox);
+                div.appendChild(label)
+
+                return div ;
+                
+            }
+            const form = document.createElement("form")
+            const div1 = createNewCheckboxt('vegetarian', 'veg')
+            
+            form.appendChild(div1)
+          
+            const div2 =createNewCheckboxt('nonvegetarian','nonveg')
+            form.appendChild(div2)
+            
+            document.body.appendChild(form)
+
+            vegHandler = document.getElementById('veg')
+           
+            vegHandler.addEventListener('click',function(){
+                if(vegHandler.checked){
+                    document.body.appendChild(vegHead)
+                    document.body.appendChild(vegultag)
+
+                }
+            } )
+
+            nonvegHandler = document.getElementById('nonveg')
+            nonvegHandler.addEventListener('click',function(){
+                if(nonvegHandler.checked ){
+                    document.body.appendChild(nonvegHead)
+                    document.body.appendChild(NonulTag)
+
+                }
+            } )
+
+           
+           
+        </script>
+        
+    </body>
+</html>

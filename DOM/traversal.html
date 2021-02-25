@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversal</title>
+</head>
+<body>
+   <h1 id ="fc">first child</h1>
+   <h1>second child</h1>
+   <p> third child</p>
+    <script>
+
+        let divtag =document.querySelector('#fc')
+        console.log(divtag.parentElement.parentElement)
+        console.log( divtag.nextSibling.textContent)
+
+        let html =document.documentElement
+        console.log(html.firstElementChild)
+    </script>
+</body>
+</html>>
+<!--
+      
+-->

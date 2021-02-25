@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+      
+        <script>
+            // if the node type is 1` then it is element or tag  
+            // if the node type is 2 then it is attribute of an Element
+            //if the node type is 3 then it is value of the attribute          
+            let ulTag = document.createElement('ul')
+            let headingTag = document.createElement('h3')
+            let  headingContent = document.createTextNode('list of the food items')
+            headingTag.appendChild(headingContent)
+            let li1 =  document.createElement('li') 
+            let content1 = document.createTextNode('dosa')
+                li1.appendChild(content1)
+                ulTag.appendChild(li1)
+            document.body.appendChild(headingTag)
+              document.body.appendChild(ulTag)
+        </script>
+    </body>
+</html>
+
+
+    

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+<body>
+    <h2> Generate your random number: <span id="heading"></span></h2>
+  
+    <button id="btn">Generate</button>
+
+    <button id="logout">logout</button>
+<script>
+            // to access any html elements or tag we will assign a id to it
+        const tag = document.getElementById('btn')
+        let headingHandle =  document.getElementById('heading')
+        let logoutHandle =  document.getElementById('logout')
+        
+        //events  what are the user trys to do in the web page is called as events like click mousehover
+        tag.addEventListener('click', function(){
+            
+            randomNumber =  Math.round(Math.random() * 100)
+            headingHandle.textContent = randomNumber
+        
+
+        })
+        logoutHandle.addEventListener('mouseover', function(){
+            console.log("hi")
+        });
+  </script>
+</body>
+</html>

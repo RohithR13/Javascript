@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+
+    <body>
+        <script>
+            const tag = document.createElement("a")
+            console.log(tag)
+                let content = document.createTextNode("visit google")
+                tag.appendChild(content)
+                tag.setAttribute("href", "http://www.google.com")
+            document.body.appendChild(tag)
+
+            const tag2 = document.createElement("a")
+            const br = document.createElement("br")
+            document.body.appendChild(br)
+            console.log(tag)
+                let content1 = document.createTextNode("visit hellworld")
+                tag2.appendChild(content1)
+                tag2.setAttribute("href", "./first.html")
+            document.body.appendChild(tag2)
+            //each tag will have 3 things to follow 
+            //1)createElement
+            //2) adding attributes
+            //3) assigning values to the attibutes attribute value
+        </script>
+    </body>
+</html>

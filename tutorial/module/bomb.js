@@ -11,5 +11,7 @@ function finder( str) {
 
 let str1 =" i have  "
 let str2 =" bomb is there"
+
+
 console.log(finder(str1))
 console.log(finder(str2))

@@ -24,6 +24,5 @@ console.log(reverse(789))
 console.log(reverse(7809))
 */
 
-
 let  a = "hello"
 console.log(`${a} world`)

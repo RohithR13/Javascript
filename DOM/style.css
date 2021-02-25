@@ -1,0 +1,16 @@
+h1  {
+    color : red;
+}
+img {
+    opacity: 0.5
+    
+
+}
+table {
+    border-radius: 5px;
+    -ms-grid-row-span: 2px;
+}
+tbody{
+    color : red
+}
+
